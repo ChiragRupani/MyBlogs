@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+
+    <style id="antiClickjack">
+      body {
+        display: none !important;
+      }
+    </style>
+    <script type="text/javascript">
+      if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+      } else {
+        if (document.children && document.children.length > 0) {
+          document.children[0].innerHTML =
+            '<b style="color:red">This site is not allowed in IFRAME</b>';
+        }
+        top.location = self.location;
+      }
+    </script>
+    <script type="module" crossorigin src="/MyBlogs/assets/index-BlB99Dex.js"></script>
+    <link rel="stylesheet" crossorigin href="/MyBlogs/assets/index-CPJ7vhBF.css">
+  <link rel="manifest" href="/MyBlogs/site.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/MyBlogs/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
